@@ -1,14 +1,11 @@
 // XXX: Changing Package location
 package lsp;
 
-// XXX: Rectangle now implement RectangleLike interface
-public class Rectangle implements RectangleLike {
+// XXX: Rectangle now extends Quadrilateral class
+public class Rectangle extends Quadrilateral {
     // DO NOT EDIT THE FILE FROM THIS LINE ONWARD!!
     private int width;
     private int height;
-
-    Rectangle() {
-    }
 
     Rectangle(int width, int height) {
         this.width = width;

@@ -17,11 +17,9 @@ public class Main {
 
         // XXX: Change abstraction type to Square
         Square reg2 = new Square(5);
-        reg2.setWidth(width);
-        reg2.setHeight(height);
+        reg2.setSide(width);
         System.out.println("====   Square  ====");
-        System.out.println("Width = " + width);
-        System.out.println("Height = " + height);
+        System.out.println("Side = " + width);
         System.out.println("Area = " + reg2.getArea());
     }
 }
