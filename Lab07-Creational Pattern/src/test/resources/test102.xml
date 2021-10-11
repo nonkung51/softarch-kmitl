@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Books>
+    <Book id="9780201633610">
+        <Title>Design Patterns: Elements of Reusable Object-Oriented Software</Title>
+        <Publisher>Addison-Wesley</Publisher>
+        <Authors>
+            <Author>Erich Gamma</Author>
+            <Author>Ralph Johnson</Author>
+            <Author>John Vlissides</Author>
+            <Author>Richard Helm</Author>
+        </Authors>
+    </Book>
+</Books>

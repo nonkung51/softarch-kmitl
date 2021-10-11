@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Books>
+    <Book id="9780321486813">
+        <Title>Compilers: Principles, Techniques, and Tools</Title>
+        <Publisher>Addison-Wesley</Publisher>
+        <Authors>
+            <Author>Alfred V. Aho</Author>
+            <Author>Monica S. Lam</Author>
+            <Author>Ravi Sethi</Author>
+            <Author>Jeffrey D. Ullman</Author>
+        </Authors>
+    </Book>
+    <Book id="9781118093757">
+        <Title>Operating System Concepts</Title>
+        <Publisher>Wiley</Publisher>
+        <Authors>
+            <Author>Avi Silberschatz</Author>
+            <Author>Peter Baer Galvin</Author>
+            <Author>Greg Gagne</Author>
+        </Authors>
+    </Book>
+</Books>
