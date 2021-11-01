@@ -4,21 +4,6 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.Flow.Subscriber;
 import java.util.concurrent.Flow.Publisher;
 
-/*
-    // If we've got other than 0.
-    // Loop check for each char then send.
-    String template = ((StringSubscriber) subscriber).match();
-    String c = buffer.substring(0, 1);
-    buffer = buffer.substring(1);
-
-    // Send only template that matches.
-    if (c.matches(template)) {
-        subscriber.onNext(c);
-    } else {
-        request(1);
-    }
-*/
-
 public class StringPublisher implements Publisher<String> {
     final ExecutorService executor = Executors.newFixedThreadPool(8);
     private ArrayList<StringSubscription> subscriptions = new ArrayList();
