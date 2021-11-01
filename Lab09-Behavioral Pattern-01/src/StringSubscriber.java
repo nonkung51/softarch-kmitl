@@ -25,7 +25,7 @@ abstract public class StringSubscriber implements Subscriber<String> {
         }
     }
 
-    abstract public String process(String str);
+    abstract public String match();
 
     @Override
     public void onSubscribe(Flow.Subscription subscription) {
@@ -37,11 +37,12 @@ abstract public class StringSubscriber implements Subscriber<String> {
         if (item != null) {
             try {
                 writer = new FileWriter(filename, true);
-                writer.write(process(item));
+                writer.write(item);
                 writer.close();
             } catch (IOException e) {
                 e.printStackTrace();
             }
+            subscription.request(1);
         } else {
             System.out.println("Null Item!");
         }

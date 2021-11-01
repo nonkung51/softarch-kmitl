@@ -6,7 +6,7 @@ public class NumberSubscriber extends StringSubscriber {
     }
 
     @Override
-    public String process(String str) {
-        return str.replaceAll("\\D+","");
+    public String match() {
+        return ".*[0-9].*";
     }
 }

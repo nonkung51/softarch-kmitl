@@ -5,7 +5,7 @@ public class SymbolSubscriber extends StringSubscriber{
     }
 
     @Override
-    public String process(String str) {
-        return str.replaceAll("\\w|d+","");
+    public String match() {
+        return ".*[!-/:-@\\[-`{-~].*";
     }
 }

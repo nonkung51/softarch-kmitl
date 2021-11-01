@@ -6,7 +6,7 @@ public class AlphabetSubscriber extends StringSubscriber {
     }
 
     @Override
-    public String process(String str) {
-        return str.replaceAll("[^a-zA-Z]","");
+    public String match() {
+        return ".*[a-zA-Z].*";
     }
 }

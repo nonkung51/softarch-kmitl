@@ -4,7 +4,7 @@ import java.util.concurrent.Flow;
 public class StringSubscription implements Flow.Subscription {
     private final ExecutorService executor;
 
-    private Flow.Subscriber subscriber;
+    public Flow.Subscriber subscriber;
 
     public StringSubscription(Flow.Subscriber subscriber, ExecutorService executor) {
         this.subscriber = subscriber;
@@ -14,7 +14,7 @@ public class StringSubscription implements Flow.Subscription {
     @Override
     public void request(long n) {
         if (n < 0)
-            executor.execute(() -> subscriber.onError(new IllegalArgumentException()));
+            return;
     }
 
     @Override
@@ -22,6 +22,7 @@ public class StringSubscription implements Flow.Subscription {
 
     public void publish(String str) {
         executor.execute(() -> {
+            // Start sending...
             subscriber.onNext(str);
         });
     }

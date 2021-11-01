@@ -19,7 +19,6 @@ public class Main {
         publisher.subscribe(sub3);
 
         while (true) {
-
             System.out.print("Enter some text: ");
             s = in.nextLine();
             if (s.equals(":q!")) {
