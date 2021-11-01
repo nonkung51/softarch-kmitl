@@ -38,7 +38,6 @@ public class StringPublisher implements Publisher<String> {
         int strLen = s.length();
         for (int ch = 0; ch < strLen; ch++) {
             String c = s.substring(0, 1);
-            System.out.println("c: " + c);
             s = s.substring(1);
             for (StringSubscription subscription: subscriptions) {
                 String template = ((StringSubscriber) subscription.subscriber).match();
